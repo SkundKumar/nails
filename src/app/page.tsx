@@ -1,42 +1,81 @@
+
+
 import { HoverExpand_002 } from "@/components/ui/skiper-ui/skiper53";
+import ScrollTextSection from "@/components/ScrollTextSection";
+import BentoGallery from "@/components/BentoGallery";
+import BrandTitle from "@/components/BrandTitle";
+import Footer from "@/components/Footer";
+import PinnedScrollGallery from "@/components/PinnedScrollGallery";
+import NailCustomizer from "@/components/NailCustomizer";
 
 const images = [
   {
-    src: "https://images.unsplash.com/photo-1604654894610-df63bc536371?w=800&h=600&fit=crop",
-    alt: "Elegant manicure design",
+    src: "/nails/cherry red and white hearts.jpg",
+    alt: "Cherry red and white hearts",
     code: "# 01",
   },
   {
-    src: "https://images.unsplash.com/photo-1632345031435-8727f6897d53?w=800&h=600&fit=crop",
-    alt: "Luxurious nail art",
+    src: "/nails/pink and silver glitter frfench tips.jpg",
+    alt: "Pink and silver glitter french tips",
     code: "# 02",
   },
   {
-    src: "https://images.unsplash.com/photo-1519014816548-bf5fe059798b?w=800&h=600&fit=crop",
-    alt: "Professional nail care",
+    src: "/scroll2.jpeg",
+    alt: "French with bow on every finger",
     code: "# 03",
   },
   {
-    src: "https://images.unsplash.com/photo-1610992015732-2449b76344bc?w=800&h=600&fit=crop",
-    alt: "Creative nail designs",
+    src: "/nails/pink heart nails.jpg",
+    alt: "Pink heart nails",
     code: "# 04",
   },
   {
-    src: "https://images.unsplash.com/photo-1607779097040-26e80aa78e66?w=800&h=600&fit=crop",
-    alt: "Stylish nail polish",
+    src: "/nails/nude base white flower at bottom on all.jpg",
+    alt: "Nude base white flower design",
     code: "# 05",
   },
   {
-    src: "https://images.unsplash.com/photo-1604654894610-df63bc536371?w=800&h=600&fit=crop",
-    alt: "Beautiful nail finish",
+    src: "/nails/Cherry Blossom Dream Long Almond Shaped Beige and Burgundy Press On Nail Set with Beautiful Cherry Design.jpg",
+    alt: "Cherry blossom dream nails",
     code: "# 06",
   },
 ];
 
+const pinnedItems = [
+  {
+    title: "The Signature Collection",
+    subtitle: "handcrafted 2d art on every nail",
+    price: "\u20B998",
+    image: "/nails/cherry red and white hearts.jpg",
+    href: "/collection/signature",
+  },
+  {
+    title: "The Classics",
+    subtitle: "clean, solid & effortlessly chic",
+    price: "\u20B979",
+    image: "/nails/pink and silver glitter frfench tips.jpg",
+    href: "/collection/classics",
+  },
+  {
+    title: "Made For You",
+    subtitle: "tell us your dream design",
+    price: "\u20B9129",
+    image: "/nails/nude base white flower at bottom on all.jpg",
+    href: "/collection/custom",
+  },
+];
+
+
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-[#f5f4f3]">
-      <HoverExpand_002 images={images} className="" />
-    </div>
+    <>
+      <div className="relative flex min-h-screen items-center justify-center bg-[#f5f4f3]">
+        <BrandTitle />
+        <HoverExpand_002 images={images} className="" />
+      </div>
+      <PinnedScrollGallery items={pinnedItems} />
+      <NailCustomizer />
+      <Footer />
+    </>
   );
 }
