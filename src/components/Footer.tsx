@@ -18,7 +18,7 @@ export default function Footer() {
             Book your appointment
           </p>
           <Link
-            href="https://www.instagram.com/manyaaawho?igsh=MTloMndyNndkY2tldQ=="
+            href="https://www.instagram.com/fresh.ons?utm_source=qr&igsh=MTRnYmMzOGp6MzE4bg=="
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-[#e8a0b8] hover:bg-[#d88fa8] text-black font-mono text-sm tracking-wider px-8 py-4 transition-colors duration-300"
