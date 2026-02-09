@@ -107,8 +107,8 @@ export default function NailCustomizer() {
   if (!hydrated) return null;
 
   return (
-    <section className="w-full bg-[#f5f4f3] py-16 px-4">
-      <div className="max-w-lg mx-auto">
+    <section className="w-full bg-[#f5f4f3] px-4 h-[700px] flex flex-col items-center justify-center overflow-hidden">
+      <div className="max-w-lg mx-auto w-full">
         <h2
           className="text-3xl md:text-4xl text-center text-[#3a2a2a] mb-2"
           style={{ fontFamily: "var(--font-dancing)" }}
