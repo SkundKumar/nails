@@ -179,7 +179,7 @@ export default function PinnedScrollGallery({ items }: PinnedScrollGalleryProps)
             {items.map((item, i) => (
               <div
                 key={i}
-                className="pinned-slide md:absolute md:right-4 flex items-center justify-center"
+                className="pinned-slide md:absolute md:right-8 lg:right-12 flex items-center justify-center"
                 style={{
                   width: "100%",
                   top: "50%",
@@ -192,7 +192,7 @@ export default function PinnedScrollGallery({ items }: PinnedScrollGalleryProps)
                 <img
                   src={item.image}
                   alt={item.title}
-                  className="w-36 h-36 md:w-full md:max-w-75 rounded-2xl object-cover shadow-lg"
+                  className="w-36 h-36 md:w-80 md:h-80 lg:w-[420px] lg:h-[420px] rounded-2xl object-cover shadow-lg"
                 />
               </div>
             ))}

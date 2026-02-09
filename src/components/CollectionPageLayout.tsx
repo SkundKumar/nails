@@ -18,7 +18,7 @@ export default function CollectionPageLayout({
   subtitle,
   price,
   items,
-  instagramUsername = "manya.nails",
+  instagramUsername = "manyaaawho",
 }: CollectionPageLayoutProps) {
   const [selectedItem, setSelectedItem] = useState<MasonryItem | null>(null);
 
