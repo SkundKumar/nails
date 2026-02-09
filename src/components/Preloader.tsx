@@ -8,7 +8,7 @@ const NUM_PATHS = 2;
 const DELAY_POINTS_MAX = 0.3;
 const DELAY_PER_PATH = 0.25;
 
-const BRAND_TEXT = "NailedIT";
+const BRAND_TEXT = "FreshOns";
 
 export default function Preloader() {
   const svgRef = useRef<SVGSVGElement>(null);

@@ -7,7 +7,7 @@ export default function BrandTitle() {
   const containerRef = useRef<HTMLDivElement>(null);
   const lettersRef = useRef<(HTMLSpanElement | null)[]>([]);
 
-  const text = "NailedIT";
+  const text = "FreshOns";
 
   useEffect(() => {
     const letters = lettersRef.current.filter(Boolean) as HTMLSpanElement[];

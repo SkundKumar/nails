@@ -29,7 +29,7 @@ const dancingScript = Dancing_Script({
 });
 
 export const metadata: Metadata = {
-  title: "NailedIT",
+  title: "Fresh Ons",
   description: "One Stop Nail Shop for all your nail needs",
 };
 

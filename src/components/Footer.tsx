@@ -7,7 +7,7 @@ export default function Footer() {
     <footer className="bg-[#1a1a1a] text-white py-16 px-6">
       <div className="max-w-4xl mx-auto text-center">
         {/* Brand */}
-        <h2 className="font-mono text-3xl tracking-[0.2em] mb-4">NailedIT</h2>
+        <h2 className="font-mono text-3xl tracking-[0.2em] mb-4">Fresh Ons</h2>
         <p className="font-serif text-lg text-white/70 mb-8">
           Premium nail artistry, crafted with care
         </p>
@@ -39,7 +39,7 @@ export default function Footer() {
 
         {/* Bottom */}
         <p className="font-serif text-xs text-white/40">
-          © {new Date().getFullYear()} NailedIT. All rights reserved.
+          © {new Date().getFullYear()} Fresh Ons. All rights reserved.
         </p>
       </div>
     </footer>
