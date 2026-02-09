@@ -28,6 +28,11 @@ export default function PinnedScrollGallery({ items }: PinnedScrollGalleryProps)
   const router = useRouter();
 
   const handleNavigate = useCallback((href: string) => {
+    // External links (Instagram DM etc.) — open in new tab
+    if (href.startsWith("http")) {
+      window.open(href, "_blank", "noopener");
+      return;
+    }
     // Kill all ScrollTrigger instances and revert GSAP context before navigating
     // This prevents the "removeChild" error from pinned elements
     if (ctxRef.current) {

@@ -61,7 +61,7 @@ const pinnedItems = [
     subtitle: "tell us your dream design",
     price: "\u20B9129",
     image: "/nails/nude base white flower at bottom on all.jpg",
-    href: "/collection/custom",
+    href: "https://ig.me/m/fresh.ons",
   },
 ];
 

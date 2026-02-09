@@ -87,7 +87,7 @@ export default function DesignModal({
               </h3>
 
               <p className="text-[11px] text-[#c4b0b0] tracking-[0.15em] uppercase mt-1.5">
-                tap below to order via dm ✨
+                your order details will be copied — just paste in the DM ✨
               </p>
 
               <button
@@ -99,7 +99,7 @@ export default function DesignModal({
               </button>
 
               <p className="text-[10px] text-[#c4b0b0] mt-2">
-                message copied to clipboard
+                order copied to clipboard — paste it in the chat to complete your order
               </p>
             </div>
           </motion.div>
