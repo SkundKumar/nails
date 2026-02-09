@@ -14,12 +14,15 @@ const useMedia = (
   values: number[],
   defaultValue: number
 ): number => {
-  const get = () =>
-    values[queries.findIndex((q) => matchMedia(q).matches)] ?? defaultValue;
-  const [value, setValue] = useState<number>(get);
+  const get = () => {
+    if (typeof window === "undefined") return defaultValue;
+    return values[queries.findIndex((q) => matchMedia(q).matches)] ?? defaultValue;
+  };
+  const [value, setValue] = useState<number>(defaultValue);
 
   useEffect(() => {
-    const handler = () => setValue(get);
+    setValue(get());
+    const handler = () => setValue(get());
     queries.forEach((q) => matchMedia(q).addEventListener("change", handler));
     return () =>
       queries.forEach((q) =>
@@ -121,7 +124,7 @@ const Masonry: React.FC<MasonryProps> = ({
       "(min-width:500px)",
     ],
     [4, 3, 2],
-    1
+    2
   );
 
   const [containerRef, { width }] = useMeasure<HTMLDivElement>();

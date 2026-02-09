@@ -73,8 +73,9 @@ export default function Home() {
         <BrandTitle />
         <HoverExpand_002 images={images} className="" />
       </div>
+       <NailCustomizer />
       <PinnedScrollGallery items={pinnedItems} />
-      <NailCustomizer />
+     
       <Footer />
     </>
   );

@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import BentoGallery from "./BentoGallery";
-
+import NailCustomizer from "./NailCustomizer";
 gsap.registerPlugin(ScrollTrigger);
 
 interface PinnedItem {
@@ -117,10 +117,13 @@ export default function PinnedScrollGallery({ items }: PinnedScrollGalleryProps)
   return (
     <>
       {/* Spacer section above */}
+       
       <section className="flex mb-20 h-screen w-full items-center justify-center bg-[#f5f4f3]">
-        <BentoGallery />
+       
+         <BentoGallery />
+    
       </section>
-
+      
       {/* Pinned scroll section */}
       <section
         ref={pinSectionRef}
@@ -130,11 +133,11 @@ export default function PinnedScrollGallery({ items }: PinnedScrollGalleryProps)
           borderBottom: "dashed 2px #e8d8d8",
         }}
       >
-        <div className="relative mx-auto flex w-full max-w-300 px-6 md:px-10">
+        <div className="relative mx-auto flex flex-col md:flex-row w-full max-w-300 px-6 md:px-10">
           {/* List */}
           <ul
             ref={listRef}
-            className="m-0 list-none p-0 pr-8 md:pr-14"
+            className="m-0 list-none p-0 pr-0 md:pr-14"
             style={{ flexGrow: 0 }}
           >
             {items.map((item, i) => (
@@ -172,13 +175,13 @@ export default function PinnedScrollGallery({ items }: PinnedScrollGalleryProps)
           />
 
           {/* Right side with slides */}
-          <div className="relative" style={{ flexGrow: 1 }}>
+          <div className="relative mt-6 md:mt-0 flex items-center justify-center md:block" style={{ flexGrow: 1, minHeight: "180px" }}>
             {items.map((item, i) => (
               <div
                 key={i}
-                className="pinned-slide absolute right-4 flex items-center justify-center"
+                className="pinned-slide md:absolute md:right-4 flex items-center justify-center"
                 style={{
-                  width: "50%",
+                  width: "100%",
                   top: "50%",
                   transform: "translateY(-50%)",
                   opacity: 0,
@@ -189,7 +192,7 @@ export default function PinnedScrollGallery({ items }: PinnedScrollGalleryProps)
                 <img
                   src={item.image}
                   alt={item.title}
-                  className="w-full max-w-75 rounded-2xl object-cover shadow-lg"
+                  className="w-36 h-36 md:w-full md:max-w-75 rounded-2xl object-cover shadow-lg"
                 />
               </div>
             ))}
