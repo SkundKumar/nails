@@ -69,11 +69,18 @@ const pinnedItems = [
 export default function Home() {
   return (
     <>
-      <div className="relative flex min-h-screen items-center justify-center bg-[#f5f4f3]">
-        <BrandTitle />
-        <HoverExpand_002 images={images} className="" />
+      <div className="relative flex flex-col lg:flex-row min-h-screen bg-[#f5f4f3]">
+        {/* Hero content — right on desktop, first on mobile */}
+        <div className="order-1 lg:order-2 flex-1 flex flex-col items-center justify-center relative min-h-[70vh] lg:min-h-screen py-32 px-4 lg:py-0">
+          <BrandTitle />
+          <HoverExpand_002 images={images} className="" />
+        </div>
+
+        {/* Nail Customizer — left on desktop, second on mobile */}
+        <div className="order-2 lg:order-1 flex items-center justify-center lg:w-[480px] lg:border-r lg:border-[#e8e0e0]">
+          <NailCustomizer />
+        </div>
       </div>
-       <NailCustomizer />
       <PinnedScrollGallery items={pinnedItems} />
      
       <Footer />
