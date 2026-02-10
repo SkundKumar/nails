@@ -11,6 +11,7 @@ interface CollectionPageLayoutProps {
   price: string;
   items: MasonryItem[];
   instagramUsername?: string;
+  showCustomCta?: boolean;
 }
 
 export default function CollectionPageLayout({
@@ -19,6 +20,7 @@ export default function CollectionPageLayout({
   price,
   items,
   instagramUsername = "fresh.ons",
+  showCustomCta = false,
 }: CollectionPageLayoutProps) {
   const [selectedItem, setSelectedItem] = useState<MasonryItem | null>(null);
 
@@ -84,6 +86,31 @@ export default function CollectionPageLayout({
           onItemClick={(item) => setSelectedItem(item)}
         />
       </div>
+
+      {/* Custom CTA */}
+      {showCustomCta && (
+        <section className="relative px-6 pb-20 pt-8 flex flex-col items-center text-center">
+          <div className="w-16 h-px bg-[#e0cece] mb-8" />
+          <p
+            className="text-2xl md:text-3xl text-[#3a2a2a] mb-2"
+            style={{ fontFamily: "var(--font-dancing)" }}
+          >
+            Didn&apos;t find the one? 💕
+          </p>
+          <p className="text-[11px] md:text-xs text-[#b8a8a8] tracking-[0.12em] uppercase max-w-sm">
+            No worries babe! Tell us your dream design & we&apos;ll make it just for you
+          </p>
+          <a
+            href="https://ig.me/m/fresh.ons"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-6 inline-flex items-center gap-2 px-8 py-3 rounded-full border border-[#d4a0a8]/50 text-[11px] md:text-xs font-sans uppercase tracking-[0.18em] text-[#d4707a] hover:bg-[#d4707a] hover:text-white hover:border-transparent transition-all duration-300"
+          >
+            Get a custom set
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+        </section>
+      )}
 
       {/* Modal */}
       <DesignModal

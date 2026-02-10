@@ -13,9 +13,10 @@ export default function ClassicsCollection() {
   return (
     <CollectionPageLayout
       title="The Classics"
-      subtitle="clean, solid & effortlessly chic"
+      subtitle="clean, solid & effortlessly chic ✨"
       price="₹79"
       items={classicsItems}
+      showCustomCta
     />
   );
 }

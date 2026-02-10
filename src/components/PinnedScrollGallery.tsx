@@ -6,6 +6,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import BentoGallery from "./BentoGallery";
 import NailCustomizer from "./NailCustomizer";
+import { Skiper30 } from "./ui/skiper-ui/skiper30";
 gsap.registerPlugin(ScrollTrigger);
 
 interface PinnedItem {
@@ -123,12 +124,16 @@ export default function PinnedScrollGallery({ items }: PinnedScrollGalleryProps)
     <>
       {/* Spacer section above */}
        
-      <section className="flex mb-20 h-screen w-full items-center justify-center bg-[#f5f4f3]">
-       
-         <BentoGallery />
-    
-      </section>
       
+      
+      {/* Section heading */}
+      <div className="w-full bg-[#f5f4f3] pt-12 pb-4 flex flex-col items-center">
+        <p className="text-[11px] md:text-xs font-sans uppercase tracking-[0.25em] text-[#b09a8a]">
+          Tap a collection to explore
+        </p>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#b09a8a" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="mt-2 opacity-60"><path d="M7 10l5 5 5-5"/></svg>
+      </div>
+
       {/* Pinned scroll section */}
       <section
         ref={pinSectionRef}
@@ -166,6 +171,11 @@ export default function PinnedScrollGallery({ items }: PinnedScrollGalleryProps)
                       {item.price}
                     </span>
                     <span className="text-[10px] text-[#d4a0a8] tracking-wide font-sans">only ✨</span>
+                  </span>
+                  {/* Explicit CTA so users know this is clickable */}
+                  <span className="inline-flex items-center gap-1.5 mt-3 px-4 py-1.5 rounded-full border border-[#d4a0a8]/40 text-[10px] md:text-[11px] font-sans uppercase tracking-[0.15em] text-[#d4707a] group-hover:bg-[#d4707a] group-hover:text-white group-hover:border-transparent transition-all duration-300">
+                    Explore
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="transition-transform group-hover:translate-x-0.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
                   </span>
                 </button>
               </li>

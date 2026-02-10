@@ -7,6 +7,8 @@ import BrandTitle from "@/components/BrandTitle";
 import Footer from "@/components/Footer";
 import PinnedScrollGallery from "@/components/PinnedScrollGallery";
 import NailCustomizer from "@/components/NailCustomizer";
+import { Skiper30 } from "@/components/ui/skiper-ui/skiper30";
+import ScrollIndicator from "@/components/ScrollIndicator";
 
 const images = [
   {
@@ -71,7 +73,7 @@ export default function Home() {
     <>
       <div className="relative flex flex-col lg:flex-row min-h-screen bg-[#f5f4f3]">
         {/* Hero content — right on desktop, first on mobile */}
-        <div className="order-1 lg:order-2 flex-1 flex flex-col items-center justify-center relative min-h-[70vh] lg:min-h-screen py-32 px-4 lg:py-0">
+        <div className="order-1 lg:order-2 flex-1 flex flex-col items-center justify-center relative min-h-[70vh] lg:min-h-screen pt-20 pb-16  px-4 lg:py-0">
           <BrandTitle />
           <HoverExpand_002 images={images} className="" />
         </div>
@@ -80,7 +82,12 @@ export default function Home() {
         <div className="order-2 lg:order-1 flex items-center justify-center lg:w-[480px] lg:border-r lg:border-[#e8e0e0]">
           <NailCustomizer />
         </div>
+
+        {/* Scroll indicator */}
+        <ScrollIndicator />
       </div>
+       <Skiper30/>
+       
       <PinnedScrollGallery items={pinnedItems} />
      
       <Footer />

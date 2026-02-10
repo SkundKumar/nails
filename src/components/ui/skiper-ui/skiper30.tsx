@@ -10,13 +10,14 @@ const images = [
   "/nails/red and white frenchies.jpg",
   "/nails/pink square nails.jpg",
   "/nails/cherry red with white star on middle and ring finger.jpg",
-  "/nails/Vday nails #valentines #vdaygiftsforher….jpg",
+  "/nails/pink and silver glitter frfench tips.jpg",
   "/nails/french tips with cherries.jpg",
   "/nails/subtle white flowers.jpg",
   "/nails/pink and silver gradient.jpg",
   "/nails/Kawaii red and white Polka Dots Press on Nails Long Almond Nails Custom Nail French Tip - Etsy (1).jpg",
   "/nails/regular french with some red hearts.jpg",
-  "/nails/red with white heart on middle, white bgm and red heart on ring.jpg",
+  "/nails/red with white heart on middle.jpg",
+  "/nails/download.jpg",
   "/nails/pink oval with cherry red design.jpg",
 ];
 
@@ -89,7 +90,7 @@ const Column = ({ images, y }: ColumnProps) => {
         <div key={i} className="relative h-full w-full overflow-hidden">
           <img
             src={`${src}`}
-            alt="image"
+            alt={`${src}`}
             className="pointer-events-none object-cover"
           />
         </div>
