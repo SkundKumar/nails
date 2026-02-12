@@ -21,8 +21,8 @@ const signatureItems = [
   { id: "s18", img: "/nails/the signature collection/french with just bow on every finger.jpg", name: "Bow French Tips", height: 470 },
   { id: "s19", img: "/nails/the signature collection/heart french red.jpg", name: "Heart French Red", height: 440 },
   { id: "s20", img: "/nails/the signature collection/Kawaii Brown Polka Dots Press on Nails Long Almond Nails Custom Nail French Tip - Etsy.jpg", name: "Kawaii Brown Polka Dots", height: 530 },
-  { id: "s21", img: "/nails/the signature collection/pink and silver glitter frfench tips.jpg", name: "Pink Silver Glitter French", height: 480 },
-  { id: "s22", img: "/nails/the signature collection/pink and silver gradient.jpg", name: "Pink Silver Gradient", height: 450 },
+
+
   { id: "s23", img: "/nails/the signature collection/pink square nails.jpg", name: "Pink Square Nails", height: 420 },
   { id: "s24", img: "/nails/the signature collection/Rebellious Rose Makeup _ Elevate Your Style With, 24pcs_Set Short Oval Bow And Polka Dot Nails Design _ Color_ Red_White _ Size_ Os.jpg", name: "Rebellious Rose Polka", height: 500 },
   { id: "s25", img: "/nails/the signature collection/red and white frenchies.jpg", name: "Red & White French", height: 460 },
