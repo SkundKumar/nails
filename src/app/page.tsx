@@ -17,11 +17,6 @@ const images = [
     code: "# 01",
   },
   {
-    src: "/nails/pink and silver glitter frfench tips.jpg",
-    alt: "Pink and silver glitter french tips",
-    code: "# 02",
-  },
-  {
     src: "/scroll2.jpeg",
     alt: "French with bow on every finger",
     code: "# 03",
