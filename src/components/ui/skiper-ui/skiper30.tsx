@@ -10,7 +10,7 @@ const images = [
   "/nails/red and white frenchies.jpg",
   "/nails/pink square nails.jpg",
   "/nails/cherry red with white star on middle and ring finger.jpg",
-  "/nails/pink and silver glitter frfench tips.jpg",
+  "/nails/french tips with cherries.jpg",
   "/nails/french tips with cherries.jpg",
   "/nails/subtle white flowers.jpg",
   "/nails/pink and silver gradient.jpg",

@@ -50,7 +50,7 @@ const pinnedItems = [
     title: "The Classics",
     subtitle: "clean, solid & effortlessly chic",
     price: "\u20B979",
-    image: "/nails/pink and silver glitter frfench tips.jpg",
+    image: "/nails/french tips with cherries.jpg",
     href: "/collection/classics",
   },
   {

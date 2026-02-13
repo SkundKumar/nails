@@ -10,7 +10,7 @@ gsap.registerPlugin(ScrollTrigger, Flip);
 const galleryImages = [
   "/nails/cherry red with white star on middle and ring finger.jpg",
   "/nails/cherry red and white hearts.jpg",
-  "/nails/pink and silver glitter frfench tips.jpg",
+  "/nails/french tips with cherries.jpg",
   "/nails/french with just bow on every finger.jpg",
   "/nails/pink heart nails.jpg",
   "/nails/red and white frenchies.jpg",
