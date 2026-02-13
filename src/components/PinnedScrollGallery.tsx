@@ -7,6 +7,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import BentoGallery from "./BentoGallery";
 import NailCustomizer from "./NailCustomizer";
 import { Skiper30 } from "./ui/skiper-ui/skiper30";
+import SectionScrollHint from "./SectionScrollHint";
 gsap.registerPlugin(ScrollTrigger);
 
 interface PinnedItem {
@@ -143,6 +144,12 @@ export default function PinnedScrollGallery({ items }: PinnedScrollGalleryProps)
           borderBottom: "dashed 2px #e8d8d8",
         }}
       >
+        <SectionScrollHint
+          label="Scroll to start your custom website"
+          tone="light"
+          className="absolute bottom-5 left-1/2 -translate-x-1/2"
+          buttonClassName="max-w-[220px] text-center"
+        />
         <div className="relative mx-auto flex flex-col md:flex-row w-full max-w-300 px-6 md:px-10">
           {/* List */}
           <ul
@@ -214,6 +221,7 @@ export default function PinnedScrollGallery({ items }: PinnedScrollGalleryProps)
           </div>
         </div>
       </section>
+
 
     
     </>
