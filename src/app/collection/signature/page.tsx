@@ -35,7 +35,7 @@ export default function SignatureCollection() {
     <CollectionPageLayout
       title="The Signature Collection"
       subtitle="handcrafted 2d art on every single nail 💅"
-      price="₹98"
+      price="₹129"
       items={signatureItems}
       showCustomCta
     />

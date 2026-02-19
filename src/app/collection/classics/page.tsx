@@ -14,7 +14,7 @@ export default function ClassicsCollection() {
     <CollectionPageLayout
       title="The Classics"
       subtitle="clean, solid & effortlessly chic ✨"
-      price="₹79"
+      price="₹99"
       items={classicsItems}
       showCustomCta
     />
