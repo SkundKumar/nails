@@ -12,7 +12,7 @@ export default function Footer() {
       <div className="relative mx-auto flex w-full max-w-5xl flex-col px-6 py-16 text-center">
         <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
           <div className="max-w-xl">
-            <p className="text-xs uppercase tracking-[0.28em] text-[#b18f86]">FreshOnes Studio</p>
+            <p className="text-xs uppercase tracking-[0.28em] text-[#b18f86]">FreshOns Studio</p>
             <h2 className="mt-3 text-3xl font-semibold leading-tight md:text-4xl">
               Need a custom website that feels as polished as your brand?
             </h2>
@@ -38,7 +38,7 @@ export default function Footer() {
         <div className="mt-12 h-px w-full bg-[#e6d7d2]" />
 
         <div className="mt-12 flex flex-col items-center text-center">
-          <p className="text-xs uppercase tracking-[0.28em] text-[#b18f86]">FreshOnes Studio</p>
+          <p className="text-xs uppercase tracking-[0.28em] text-[#b18f86]">FreshOns Studio</p>
           <h2 className="mt-4 text-3xl font-semibold tracking-[0.18em] md:text-4xl">Fresh Ons</h2>
           <p className="mt-3 text-base text-[#6f5852]">
             Premium nail artistry, crafted with care
